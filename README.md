@@ -1,89 +1,85 @@
-To-Do List API
-Descrição
+# To-Do List API
+
+## Descrição
+
 Este projeto é uma aplicação de gerenciamento de tarefas (To-Do List) composta por um back-end em Spring Boot e um front-end simples utilizando HTML, CSS e JavaScript. O back-end é responsável por gerenciar as operações CRUD (Criar, Ler, Atualizar e Excluir) para as tarefas, enquanto o front-end oferece uma interface interativa para o usuário.
 
-Tecnologias Utilizadas
-Back-end:
-Java 21
+## Tecnologias Utilizadas
 
-Spring Boot (versão 3.4.4)
+### Back-end:
 
-Spring Data JPA (para gerenciamento de persistência com banco de dados)
+* Java 21
+* Spring Boot (versão 3.4.4)
+* Spring Data JPA (para gerenciamento de persistência com banco de dados)
+* PostgreSQL (banco de dados)
+* HikariCP (pool de conexões)
+* Hibernate ORM (para mapeamento objeto-relacional)
 
-PostgreSQL (banco de dados)
+### Front-end:
 
-HikariCP (pool de conexões)
+* HTML (estrutura da página)
+* CSS (estilização)
+* JavaScript (interatividade)
 
-Hibernate ORM (para mapeamento objeto-relacional)
+## Funcionalidades
 
-Front-end:
-HTML (estrutura da página)
+* **Criar Tarefa:** O usuário pode adicionar novas tarefas à lista.
+* **Visualizar Tarefas:** O usuário pode visualizar todas as tarefas.
+* **Atualizar Tarefa:** O usuário pode editar uma tarefa existente.
+* **Excluir Tarefa:** O usuário pode excluir tarefas da lista.
 
-CSS (estilização)
+## Como Executar
 
-JavaScript (interatividade)
+### Back-end
 
-Funcionalidades
-Criar Tarefa: O usuário pode adicionar novas tarefas à lista.
+1.  Clone o repositório:
 
-Visualizar Tarefas: O usuário pode visualizar todas as tarefas.
+    ```bash
+    git clone <url_do_repositorio>
+    ```
 
-Atualizar Tarefa: O usuário pode editar uma tarefa existente.
+2.  Navegue até o diretório do projeto:
 
-Excluir Tarefa: O usuário pode excluir tarefas da lista.
+    ```bash
+    cd To-Do-List.Backend
+    ```
 
-Como Executar
-Back-end
-Clone o repositório:
+3.  Compile e execute o projeto com Maven:
 
-bash
-Copiar
-Editar
-git clone <url_do_repositorio>
-Navegue até o diretório do projeto:
+    ```bash
+    ./mvnw spring-boot:run
+    ```
 
-bash
-Copiar
-Editar
-cd To-Do-List.Backend
-Compile e execute o projeto com Maven:
+    A aplicação estará disponível em `http://localhost:8080`.
 
-bash
-Copiar
-Editar
-./mvnw spring-boot:run
-A aplicação estará disponível em http://localhost:8080.
+### Front-end
 
-Front-end
-Clone o repositório (caso ainda não tenha feito):
+1.  Clone o repositório (caso ainda não tenha feito):
 
-bash
-Copiar
-Editar
-git clone <url_do_repositorio>
-Navegue até o diretório frontend:
+    ```bash
+    git clone <url_do_repositorio>
+    ```
 
-bash
-Copiar
-Editar
-cd To-Do-List.Frontend
-Abra o arquivo index.html em um navegador de sua escolha.
+2.  Navegue até o diretório `frontend`:
 
-Endpoints da API
-GET /tasks: Retorna todas as tarefas.
+    ```bash
+    cd To-Do-List.Frontend
+    ```
 
-POST /tasks: Cria uma nova tarefa.
+3.  Abra o arquivo `index.html` em um navegador de sua escolha.
 
-PUT /tasks/{id}: Atualiza uma tarefa existente.
+## Endpoints da API
 
-DELETE /tasks/{id}: Exclui uma tarefa.
+* `GET /tasks`: Retorna todas as tarefas.
+* `POST /tasks`: Cria uma nova tarefa.
+* `PUT /tasks/{id}`: Atualiza uma tarefa existente.
+* `DELETE /tasks/{id}`: Exclui uma tarefa.
 
-Banco de Dados
-A aplicação utiliza o PostgreSQL para persistência das tarefas. O banco de dados deve ser configurado no arquivo application.properties (no diretório src/main/resources).
+## Banco de Dados
 
-properties
-Copiar
-Editar
+A aplicação utiliza o PostgreSQL para persistência das tarefas. O banco de dados deve ser configurado no arquivo `application.properties` (no diretório `src/main/resources`).
+
+```properties
 spring.datasource.url=jdbc:postgresql://localhost:5432/todolist
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
