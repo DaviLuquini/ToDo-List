@@ -1,0 +1,97 @@
+body {
+    background: url('/images/lista-de-tarefas.jpg') no-repeat center center;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: rgba(255, 255, 255, 0.356);
+    background-blend-mode: lighten; 
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    height: 100%;
+}
+
+header h1 {
+    font-weight: bold;
+    background-color: #ffffff;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid #000000; 
+}
+
+button {
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #958e8e;
+}
+
+#clear-tasks {
+    height: 5vh;
+    width: 5vw;
+    margin: 1%;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.task-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.task-input {
+    width: 100%; 
+    padding: 30px; 
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+}
+
+.done-button {
+    display: row;
+    position: absolute;
+    height: 5vh;
+    width: 4vw;
+    top: 48%;
+    left: 55%;
+    padding: 5px 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    display: none;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 1%;
+}
+
+footer p {
+    font-size: 18px;
+    font-weight: bold;
+    margin-right: -1.5%;
+}
