@@ -28,6 +28,9 @@ Este projeto é uma aplicação de gerenciamento de tarefas (To-Do List) compost
 * **Atualizar Tarefa:** O usuário pode editar uma tarefa existente.
 * **Excluir Tarefa:** O usuário pode excluir tarefas da lista.
 
+## Imagem da API:
+![Captura de tela 2025-03-31 143248](https://github.com/user-attachments/assets/c2b012e0-42d9-4003-bc48-2c66e2bd9175)
+
 ## Como Executar
 
 ### Back-end
@@ -35,7 +38,7 @@ Este projeto é uma aplicação de gerenciamento de tarefas (To-Do List) compost
 1.  Clone o repositório:
 
     ```bash
-    git clone <url_do_repositorio>
+    git clone https://github.com/DaviLuquini/ToDo-List.git
     ```
 
 2.  Navegue até o diretório do projeto:
@@ -57,7 +60,7 @@ Este projeto é uma aplicação de gerenciamento de tarefas (To-Do List) compost
 1.  Clone o repositório (caso ainda não tenha feito):
 
     ```bash
-    git clone <url_do_repositorio>
+    git clone https://github.com/DaviLuquini/ToDo-List.git
     ```
 
 2.  Navegue até o diretório `frontend`:
