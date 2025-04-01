@@ -8,7 +8,7 @@ body {
     flex-direction: column;
     min-height: 100vh;
     background-color: rgba(255, 255, 255, 0.356);
-    background-blend-mode: lighten; 
+    background-blend-mode: lighten;
 }
 
 header {
@@ -24,7 +24,7 @@ header h1 {
     background-color: #ffffff;
     padding: 10px;
     border-radius: 10px;
-    border: 1px solid #000000; 
+    border: 1px solid #000000;
 }
 
 button {
@@ -55,25 +55,34 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    width: 100%; 
+    max-width: 400px; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
 }
 
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%; 
+    margin-bottom: 10px; 
+    position: relative;
+}
 
 .task-input {
     width: 100%; 
-    padding: 30px; 
+    padding: 10px; 
     font-size: 16px;
-    border: 1px solid #ccc; 
+    border: 1px solid #ccc;
     border-radius: 4px;
+    box-sizing: border-box;
 }
 
 .done-button {
-    display: row;
-    position: absolute;
-    height: 5vh;
-    width: 4vw;
-    top: 48%;
-    left: 55%;
-    padding: 5px 10px;
+    height: 40px; 
+    width: 60px; 
+    margin-left: 10px; 
     background-color: #4CAF50;
     color: white;
     border: none;
