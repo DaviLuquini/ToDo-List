@@ -21,6 +21,10 @@ Este projeto é uma aplicação de gerenciamento de tarefas (To-Do List) compost
 * CSS (estilização)
 * JavaScript (interatividade)
 
+## Imagem do Front-End:
+![Captura de tela 2025-04-01 183730](https://github.com/user-attachments/assets/ec8a81a9-85f0-4118-a0d8-a6a00eaaf908)
+
+
 ## Funcionalidades
 
 * **Criar Tarefa:** O usuário pode adicionar novas tarefas à lista.
